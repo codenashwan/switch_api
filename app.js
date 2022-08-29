@@ -18,14 +18,13 @@ async function checkout() {
         },
         order: {
           amount: "100",
-          currency: "IQD",
+          currency: "USD",
           description: "Ordered goods",
           id: "order-id",
         },
       },
       {
         headers: {
-          "Content-Type": "application/x-www-form-urlencoded",
           Authorization: `Basic ${token}`,
         },
       }
